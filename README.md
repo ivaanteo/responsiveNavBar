@@ -5,9 +5,7 @@ Built with React and React Router.
 <img width="1439" alt="Screenshot 2021-06-16 at 4 43 33 PM" src="https://user-images.githubusercontent.com/46380612/122187975-1e2a5480-cec2-11eb-8f72-55e6c1e933c0.png">
 
 # Mobile View
-<img width="288" alt="Screenshot 2021-06-16 at 4 43 54 PM" src="https://user-images.githubusercontent.com/46380612/122188153-43b75e00-cec2-11eb-8e2f-3b8f319c489a.png">
-
-<img width="287" alt="Screenshot 2021-06-16 at 4 44 10 PM" src="https://user-images.githubusercontent.com/46380612/122188190-4e71f300-cec2-11eb-93f9-ce487b4d3d2b.png">
+<img width="288" alt="Screenshot 2021-06-16 at 4 43 54 PM" src="https://user-images.githubusercontent.com/46380612/122188153-43b75e00-cec2-11eb-8e2f-3b8f319c489a.png"> <img width="287" alt="Screenshot 2021-06-16 at 4 44 10 PM" src="https://user-images.githubusercontent.com/46380612/122188190-4e71f300-cec2-11eb-93f9-ce487b4d3d2b.png">
 
 Feel free to use this template!
 
