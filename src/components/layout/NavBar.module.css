@@ -1,0 +1,136 @@
+.wrapper{
+  z-index: 10;
+}
+
+.navBar {
+  background: black;
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding: 0 1rem;
+  height: 4.25rem;
+  color: white;
+  z-index: initial;
+}
+.navBarJustify {
+  justify-content: space-around;
+}
+/* left side */
+.navTitle {
+  color: rgb(79, 248, 130);
+  text-decoration: none;
+}
+
+/* middle */
+/* .navLinks { */
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-around; */
+  /* z-index: initial; */
+/* } */
+
+.navLink {
+  color: white;
+  padding: 1rem;
+  text-decoration: none;
+  position: relative;
+}
+.navLink:hover {
+  color: rgb(79, 248, 130);
+  transition: 0.3s linear;
+}
+.navLink::after {
+  cursor: pointer;
+  content: "";
+  position: absolute;
+  bottom: 0.3125rem;
+  left: 0;
+  width: 100%;
+  height: 0.1rem;
+  background-color: rgb(79, 248, 130);
+  transform: scale(0);
+  transform-origin: center;
+}
+.navLink:hover::after {
+  transform: scale(1);
+  transition: transform 300ms;
+}
+.activeNavLink {
+  color: rgb(79, 248, 130);
+}
+.activeNavLink::after {
+  transform: scale(1);
+}
+
+/* right side */
+.buttonGroup {
+  display: flex;
+}
+
+.button {
+  font-size: 1rem;
+  /* margin: 0.75rem 0; */
+  -webkit-border-radius: 1.25rem;
+  -moz-border-radius: 1.25rem;
+  border-radius: 1.25rem;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  background-color: rgb(11, 199, 67);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: rgb(66, 224, 114);
+  -webkit-border-radius: 1.25rem;
+  -moz-border-radius: 1.25rem;
+  border-radius: 1.25rem;
+  text-decoration: none;
+}
+
+.icon {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .icon {
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+    margin-left: 1.25rem;
+    cursor: pointer;
+  }
+
+  .navLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    background-color: black;
+    padding: 0rem 1.5rem 1rem;
+    height: 30vh;
+    position: absolute;
+    top: 4.25rem;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+    z-index: -1;
+  }
+  .navLinks.close {
+    top:-30vh;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    z-index: -1;
+  }
+  .navBarJustify {
+    justify-content: space-between;
+  }
+  .navTitle h1{
+    font-size: 1.25rem;
+  }
+  .button{
+    font-size: 0.75rem;
+  }
+}
